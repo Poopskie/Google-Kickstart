@@ -10,7 +10,7 @@ def solve():
 if __name__ == '__main__':
     T = int(input())
     for i in range(T):
-        solve()
+        print(f'Case #{i+1}: {solve()}')
 
 
 

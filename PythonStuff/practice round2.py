@@ -11,12 +11,14 @@ def solve():
     greatest_list = []
     H = 0
     for i in range(length):
-        if papers[i] > H:
+        if papers[i] >= H:
             greatest_list.append(papers[i])
         H = len(greatest_list)
         for num in greatest_list:
             if num < H:
                 greatest_list.remove(num)
+                H = len(greatest_list)
+                break
         H = len(greatest_list)
         final.append(H)
     return final
