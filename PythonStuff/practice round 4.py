@@ -37,11 +37,13 @@ def solve():
 
     # mmake a binary tree to test all possibilities
 
+    test = ''
+
     for i in range(M[2]):
         for j in range(2):
 
-        poo = complaints(scores, '001', M[0])
-        if poo not in bad:
+        poo = complaints(scores, test, M[0])
+        if test not in bad:
             return poo
 
     
