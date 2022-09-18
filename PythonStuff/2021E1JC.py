@@ -21,7 +21,8 @@ def solve():
             print(ans)
             return 'IMPOSSIBLE'
     
-    return ans
+    return ans 
+    
 
 
 if __name__ == '__main__':
